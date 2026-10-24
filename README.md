@@ -13,6 +13,7 @@ lessons/<NN-topic>/<NN-lesson>/
 ├── NOTES.md                 # lesson notes (Vietnamese)
 ├── playground/<name>.cpp    # runnable experiments, each with its own main()
 └── <problem-slug>/
+    ├── README.md            # approach + step-by-step visualization of the algorithm
     ├── solution.hpp         # class Solution, LeetCode-compatible signature
     └── solution_test.cpp    # unit tests
 cpp-notes/                   # C++ concepts learned along the way
@@ -38,7 +39,7 @@ Start a new problem:
 
 ```sh
 tools/new-problem.sh lessons/01-arrays/02-static-arrays remove-element \
-    "Remove Element" https://leetcode.com/problems/remove-element/
+    "Remove Element" https://leetcode.com/problems/remove-element/ easy
 ```
 
 ## Progress
