@@ -42,6 +42,10 @@ _Avoid_: Duplicate, repeat
 The reviewed, corrected summary of a Lesson, written in Vietnamese in the learner's and Claude's own words.
 _Avoid_: Summary, transcript, cheat sheet
 
+**Playground**:
+A runnable, untested program belonging to a Lesson, used to experiment with that Lesson's code.
+_Avoid_: Sandbox, scratch, demo
+
 **C++ Note**:
 A short reference page on one C++ concept learned while solving Problems.
 _Avoid_: C++ tip, snippet

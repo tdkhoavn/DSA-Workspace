@@ -11,6 +11,7 @@ Every solution is my own work, is covered by unit tests ([GoogleTest](https://gi
 ```
 lessons/<NN-topic>/<NN-lesson>/
 ├── NOTES.md                 # lesson notes (Vietnamese)
+├── playground/<name>.cpp    # runnable experiments, each with its own main()
 └── <problem-slug>/
     ├── solution.hpp         # class Solution, LeetCode-compatible signature
     └── solution_test.cpp    # unit tests
@@ -31,7 +32,7 @@ cmake --build build
 ctest --test-dir build --output-on-failure
 ```
 
-In CLion, open the folder as a CMake project: each problem appears as its own run configuration (e.g. `02-remove-element`).
+In CLion, open the folder as a CMake project: each problem appears as its own run configuration (e.g. `02-remove-element`), and each playground file as `<lesson>-pg-<name>` (e.g. `02-pg-static_array`).
 
 Start a new problem:
 

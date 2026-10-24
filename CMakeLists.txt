@@ -49,3 +49,24 @@ foreach(test_source IN LISTS DSA_TEST_SOURCES)
     endif()
     gtest_discover_tests(${target})
 endforeach()
+
+# Every lessons/<topic>/<lesson>/playground/<name>.cpp is a standalone program with its own
+# main(), for experimenting with a lesson's code. Target: "<lesson-number>-pg-<name>".
+file(GLOB DSA_PLAYGROUND_SOURCES CONFIGURE_DEPENDS
+    ${CMAKE_CURRENT_SOURCE_DIR}/lessons/*/*/playground/*.cpp)
+
+foreach(playground_source IN LISTS DSA_PLAYGROUND_SOURCES)
+    get_filename_component(name ${playground_source} NAME_WE)
+    get_filename_component(playground_dir ${playground_source} DIRECTORY)
+    get_filename_component(lesson_dir ${playground_dir} DIRECTORY)
+    get_filename_component(lesson ${lesson_dir} NAME)
+    string(REGEX MATCH "^[0-9]+" lesson_number ${lesson})
+    set(target "${lesson_number}-pg-${name}")
+
+    add_executable(${target} ${playground_source})
+    target_compile_options(${target} PRIVATE -Wall -Wextra -Wpedantic -Wshadow)
+    if(DSA_SANITIZE AND CMAKE_BUILD_TYPE STREQUAL "Debug")
+        target_compile_options(${target} PRIVATE -fsanitize=address,undefined -fno-omit-frame-pointer)
+        target_link_options(${target} PRIVATE -fsanitize=address,undefined)
+    endif()
+endforeach()
