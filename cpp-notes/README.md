@@ -4,3 +4,4 @@ Ghi chú ngắn về từng khái niệm C++ gặp phải trong lúc giải bài
 
 | Khái niệm | Gặp lần đầu ở |
 |---|---|
+| [Mảng tĩnh: C array và `std::array`](arrays.md) | Lesson 2 — Static Arrays |
