@@ -33,7 +33,7 @@ cmake --build build
 ctest --test-dir build --output-on-failure
 ```
 
-In CLion, open the folder as a CMake project: each problem appears as its own run configuration (e.g. `02-remove-element`), and each playground file as `<lesson>-pg-<name>` (e.g. `02-pg-static_array`).
+In CLion, open the folder as a CMake project and run `tools/gen-run-configs.sh` once: every problem gets its own run configuration that builds and runs only that problem's tests (e.g. `02-remove-element`), and every playground file gets `<lesson>-pg-<name>` (e.g. `02-pg-static_array`). `tools/new-problem.sh` regenerates them automatically.
 
 Start a new problem:
 

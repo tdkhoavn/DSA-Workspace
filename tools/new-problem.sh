@@ -47,4 +47,6 @@ for file in solution.hpp solution_test.cpp README.md; do
         "$root/templates/problem/$file" >"$dest/$file"
 done
 
-echo "Created $lesson_dir/$slug/ (re-load CMake in CLion to see the new target)"
+echo "Created $lesson_dir/$slug/"
+"$root/tools/gen-run-configs.sh"
+echo "Reload CMake in CLion, then pick \"${lesson%%-*}-$slug\" in the run configuration dropdown."
