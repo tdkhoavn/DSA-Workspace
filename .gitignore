@@ -9,3 +9,6 @@ compile_commands.json
 .vscode/
 *.swp
 .DS_Store
+
+# Playwright MCP snapshots and logs
+.playwright-mcp/

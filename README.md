@@ -53,7 +53,7 @@ tools/new-problem.sh lessons/01-arrays/02-static-arrays remove-element \
 | 1 | [RAM](https://neetcode.io/courses/dsa-for-beginners/1) | — | | | | | ⬜ |
 | 2 | [Static Arrays](https://neetcode.io/courses/dsa-for-beginners/2) | [Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/) | 🟢 Easy | [Single pass, current vs. best run](lessons/01-arrays/02-static-arrays/max-consecutive-ones/) | O(n) | O(1) | ✅ |
 |  |  | [Remove Element](https://leetcode.com/problems/remove-element/) | 🟢 Easy | [Read/write indices, copy kept elements forward](lessons/01-arrays/02-static-arrays/remove-element/) | O(n) | O(1) | ✅ |
-|  |  | [Replace Elements With Greatest Element On Right Side](https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side/) | 🟢 Easy | | | | ⬜ |
+|  |  | [Replace Elements With Greatest Element On Right Side](https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side/) | 🟢 Easy | [Reverse scan, carry the max seen so far](lessons/01-arrays/02-static-arrays/replace-elements-with-greatest-element-on-right-side/) | O(n) | O(1) | ✅ |
 | 3 | [Dynamic Arrays](https://neetcode.io/courses/dsa-for-beginners/3) | [Concatenation of Array](https://leetcode.com/problems/concatenation-of-array/) | 🟢 Easy | | | | ⬜ |
 | 4 | [Stacks](https://neetcode.io/courses/dsa-for-beginners/4) | [Baseball Game](https://leetcode.com/problems/baseball-game/) | 🟢 Easy | | | | ⬜ |
 |  |  | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | 🟢 Easy | | | | ⬜ |
